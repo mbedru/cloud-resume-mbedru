@@ -5,49 +5,81 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mohammed Bedru</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
 </head>
-<body class="bg-[#0a192f] text-gray-200 font-sans">
+<body class="bg-gray-100 text-gray-800 font-sans">
 
   <!-- Navbar -->
-  <header class="fixed top-0 left-0 w-full bg-[#0a192f] shadow-md z-50">
+  <header class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
     <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
-      <h1 class="text-teal-400 text-2xl font-bold">Mohammed</h1>
-      <nav class="space-x-6 hidden md:block">
-        <a href="#about" class="hover:text-teal-400">About</a>
-        <a href="#education" class="hover:text-teal-400">Education</a>
-        <a href="#certifications" class="hover:text-teal-400">Certifications</a>
-        <a href="#projects" class="hover:text-teal-400">Projects</a>
-        <a href="#contact" class="hover:text-teal-400">Contact</a>
+      <h1 class="text-cyan-700 text-2xl font-bold">Mohammed</h1>
+      <nav class="hidden md:flex space-x-6 font-medium">
+        <a href="#about" class="hover:text-cyan-600">About</a>
+        <a href="#experience" class="hover:text-cyan-600">Experience</a>
+        <a href="#education" class="hover:text-cyan-600">Education</a>
+        <a href="#certifications" class="hover:text-cyan-600">Certifications</a>
+        <a href="#skills" class="hover:text-cyan-600">Skills</a>
+        <a href="#projects" class="hover:text-cyan-600">Projects</a>
+        <a href="#contact" class="hover:text-cyan-600">Contact</a>
       </nav>
     </div>
   </header>
 
   <!-- Hero Section -->
-  <section class="h-screen flex flex-col justify-center items-center text-center">
-    <h2 class="text-4xl md:text-6xl font-bold">Hi, I'm Mohammed</h2>
-    <h3 class="text-2xl md:text-4xl text-teal-400 font-semibold mt-4">I build cloud solutions</h3>
-    <p class="max-w-xl mt-4 text-gray-400">
-      I'm a Java / Spring Boot Developer & AWS Certified Solutions Architect with 4+ years of experience building scalable applications and cloud solutions.
+  <section class="min-h-screen flex flex-col justify-center items-center text-center px-6 bg-gradient-to-b from-white to-cyan-50">
+    <h2 class="text-4xl md:text-6xl font-bold text-gray-900">Hi, I'm Mohammed</h2>
+    <h3 class="text-2xl md:text-4xl text-cyan-700 font-semibold mt-4">
+      I'm a <span id="typed-text"></span>
+    </h3>
+    <p class="max-w-xl mt-4 text-gray-600">
+      Java/Spring Boot Developer & AWS Certified Solutions Architect with 4+ years of experience.  
+      Skilled in microservices, DevOps, and cloud-native development with AWS and Kubernetes.
     </p>
     <div class="flex space-x-6 mt-6">
-      <a href="https://github.com/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" class="w-6 h-6"></a>
-      <a href="https://et.linkedin.com/in/mohammed-bedru" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" class="w-6 h-6"></a>
-      <a href="mailto:mbedru19@gmail.com"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg" class="w-6 h-6"></a>
+      <a href="https://github.com/mbedru" target="_blank" class="hover:scale-110 transition"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" class="w-6 h-6"></a>
+      <a href="https://et.linkedin.com/in/mohammed-bedru" target="_blank" class="hover:scale-110 transition"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" class="w-6 h-6"></a>
+      <a href="mailto:mbedru19@gmail.com" class="hover:scale-110 transition"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg" class="w-6 h-6"></a>
     </div>
-    <p class="mt-4 text-teal-400">👀 Views: <span id="view-counter">...</span></p>
+    <p class="mt-4 text-cyan-700 font-semibold">👀 Views: <span id="view-counter">...</span></p>
   </section>
 
   <!-- About -->
-  <section id="about" class="max-w-4xl mx-auto py-20 px-6">
-    <h2 class="text-3xl font-bold text-teal-400 mb-4">About Me</h2>
-    <p class="text-gray-300">
-      I’m Mohammed Bedru, a Java / Spring Boot developer and certified AWS Solutions Architect Associate with experience in building microservices, DevOps pipelines, and cloud infrastructure. Passionate about creating user-focused solutions.
+  <section id="about" class="max-w-4xl mx-auto py-16 px-6">
+    <h2 class="text-3xl font-bold text-cyan-700 mb-4">About Me</h2>
+    <p class="text-gray-700 leading-relaxed">
+      I’m Mohammed Bedru, a full-stack developer and cloud solutions architect.  
+      I’m certified in AWS (Solutions Architect Associate, Cloud Practitioner) and Kubernetes (KCNA, LFS250).  
+      I focus on building reliable, scalable systems with Java, Spring Boot, React, and modern DevOps tooling.
     </p>
   </section>
 
+  <!-- Experience -->
+  <section id="experience" class="max-w-4xl mx-auto py-16 px-6 bg-white rounded-xl shadow">
+    <h2 class="text-3xl font-bold text-cyan-700 mb-6">Work Experience</h2>
+    <div class="space-y-6">
+      <div>
+        <h3 class="text-xl font-semibold text-gray-900">Safaricom Telecommunications Ethiopia PLC</h3>
+        <p class="text-cyan-600"> Software Developer / Contact Center specialist (Jul 2023 – Present)</p>
+        <ul class="list-disc pl-6 text-gray-700">
+          <!-- <li> </li> -->
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold text-gray-900">Atlas Computer Technologies</h3>
+        <p class="text-cyan-600">Junior Software Developer (Jan 2023 – Jul 2023)</p>
+        <ul class="list-disc pl-6 text-gray-700">
+          <!-- <li>Maintained and optimized a school payment system backend (JEE).</li> -->
+        </ul>
+      </div>
+    </div>
+  </section>
+
   <!-- Education -->
-  <section id="education" class="max-w-4xl mx-auto py-20 px-6">
-    <h2 class="text-3xl font-bold text-teal-400 mb-6">Education</h2>
+  <section id="education" class="max-w-4xl mx-auto py-16 px-6">
+    <h2 class="text-3xl font-bold text-cyan-700 mb-6">Education</h2>
     <ul class="space-y-4">
       <li>
         <h3 class="font-semibold">Hilcoe School of Computer Science & Technology</h3>
@@ -61,39 +93,51 @@
   </section>
 
   <!-- Certifications -->
-  <section id="certifications" class="max-w-4xl mx-auto py-20 px-6">
-    <h2 class="text-3xl font-bold text-teal-400 mb-6">Certifications</h2>
-    <ul class="list-disc pl-6 space-y-2">
-      <li><a href="https://www.credly.com/badges/1848b611-0f54-4a5d-9869-2c57aefe2899" target="_blank" class="text-teal-400 hover:underline">AWS Certified Solutions Architect - Associate</a></li>
-      <li><a href="https://www.credly.com/badges/77d902cf-7b68-49a6-bd32-c5ecefa53a30" target="_blank" class="text-teal-400 hover:underline">AWS Certified Cloud Practitioner</a></li>
-      <li><a href="https://www.credly.com/badges/91c2465f-6102-49c6-8985-758947bca66d" target="_blank" class="text-teal-400 hover:underline">KCNA: Kubernetes & Cloud Native Associate</a></li>
-    </ul>
+  <section id="certifications" class="max-w-5xl mx-auto py-16 px-6 bg-cyan-50 rounded-xl shadow">
+    <h2 class="text-3xl font-bold text-cyan-700 mb-6">Certifications</h2>
+    <div class="grid md:grid-cols-2 gap-4">
+      <a href="https://www.credly.com/badges/91c2465f-6102-49c6-8985-758947bca66d" target="_blank" class="p-4 bg-white rounded-lg border hover:shadow-md hover:border-cyan-400 transition">KCNA: Kubernetes & Cloud Native Associate</a>
+      <a href="https://www.credly.com/badges/fd509c81-8c8d-406d-9378-89c6ca037a12" target="_blank" class="p-4 bg-white rounded-lg border hover:shadow-md hover:border-cyan-400 transition">LFS250: Kubernetes & Cloud Native Essentials</a>
+      <a href="https://www.credly.com/badges/1848b611-0f54-4a5d-9869-2c57aefe2899" target="_blank" class="p-4 bg-white rounded-lg border hover:shadow-md hover:border-cyan-400 transition">AWS Certified Solutions Architect Associate</a>
+      <a href="https://www.credly.com/badges/77d902cf-7b68-49a6-bd32-c5ecefa53a30" target="_blank" class="p-4 bg-white rounded-lg border hover:shadow-md hover:border-cyan-400 transition">AWS Certified Cloud Practitioner</a>
+      <a href="https://www.credly.com/badges/50b65d3e-b5db-453b-bc7f-a32262417930" target="_blank" class="p-4 bg-white rounded-lg border hover:shadow-md hover:border-cyan-400 transition">AWS Academy Graduate - Cloud Architecting</a>
+      <a href="https://codesignal.com/learn/certificates/cm8iqlrkb000ievnlgiayqgh9/course-paths/107" target="_blank" class="p-4 bg-white rounded-lg border hover:shadow-md hover:border-cyan-400 transition">Spring Boot REST API with Java & Gradle</a>
+      <a href="https://codesignal.com/learn/certificates/cm8iqlrkb000ievnlgiayqgh9/course-paths/66" target="_blank" class="p-4 bg-white rounded-lg border hover:shadow-md hover:border-cyan-400 transition">Coding Interview Prep with Java</a>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="max-w-4xl mx-auto py-16 px-6">
+    <h2 class="text-3xl font-bold text-cyan-700 mb-6">Skills</h2>
+    <p class="text-gray-700">
+      Java (Spring Boot, JEE, Spring Cloud), React, Next.js, Docker, Kubernetes, Terraform, PostgreSQL, MongoDB, GitLab CI/CD, SonarQube, ELK, RabbitMQ, Kafka, TailwindCSS, Material UI.
+    </p>
   </section>
 
   <!-- Projects -->
-  <section id="projects" class="max-w-4xl mx-auto py-20 px-6">
-    <h2 class="text-3xl font-bold text-teal-400 mb-6">Projects</h2>
-    <div class="space-y-6">
-      <div class="p-4 border border-gray-700 rounded-lg shadow hover:shadow-lg">
-        <h3 class="text-xl font-semibold">Cloud Resume Challenge</h3>
-        <p class="text-gray-400">Built and deployed a resume using AWS (S3, Lambda, API Gateway, DynamoDB, CloudFront) with CI/CD automation.</p>
-      </div>
-      <div class="p-4 border border-gray-700 rounded-lg shadow hover:shadow-lg">
-        <h3 class="text-xl font-semibold">E-Commerce Architectural Design</h3>
-        <p class="text-gray-400">Designed a cost-optimized, low-latency, and secure e-commerce solution on AWS using Auto Scaling, Cognito, KMS, and CloudWatch.</p>
-      </div>
+  <section id="projects" class="max-w-4xl mx-auto py-16 px-6">
+    <h2 class="text-3xl font-bold text-cyan-700 mb-6">Projects</h2>
+    <div class="p-4 border border-gray-300 rounded-lg hover:shadow-lg transition">
+      <h3 class="text-xl font-semibold">Cloud Resume Challenge</h3>
+      <p class="text-gray-600">Built and deployed a resume using AWS (S3, Lambda, API Gateway, DynamoDB, CloudFront) with CI/CD automation.</p>
     </div>
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="max-w-4xl mx-auto py-20 px-6 text-center">
-    <h2 class="text-3xl font-bold text-teal-400 mb-6">Contact Me</h2>
-    <p>Email: <a href="mailto:mbedru19@gmail.com" class="text-teal-400 hover:underline">mbedru19@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://et.linkedin.com/in/mohammed-bedru" target="_blank" class="text-teal-400 hover:underline">Mohammed Bedru</a></p>
+  <section id="contact" class="max-w-4xl mx-auto py-16 px-6 text-center">
+    <h2 class="text-3xl font-bold text-cyan-700 mb-6">Contact Me</h2>
+    <p>Email: <a href="mailto:mbedru19@gmail.com" class="text-cyan-700 hover:underline">mbedru19@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://et.linkedin.com/in/mohammed-bedru" target="_blank" class="text-cyan-700 hover:underline">Mohammed Bedru</a></p>
   </section>
 
   <script>
-    // Fetch view counter (if you have Lambda setup)
+    var typed = new Typed("#typed-text", {
+      strings: ["Solutions Architect", "Java Developer"],
+      typeSpeed: 50,
+      backSpeed: 30,
+      loop: true
+    });
+
     async function updateCounter() {
       let response = await fetch("https://sxfe3ccoa74lgxxcnaaouxuxmu0uufmo.lambda-url.us-east-1.on.aws/");
       let data = await response.json();
